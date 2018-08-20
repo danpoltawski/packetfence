@@ -1260,6 +1260,16 @@ CREATE TABLE `api_user` (
 ) ENGINE=InnoDB;
 
 --
+-- Table structure for table `keyval`
+--
+
+CREATE TABLE keyval (
+  id VARCHAR(255),
+  value LONGBLOB,
+  PRIMARY KEY(id)
+) ENGINE=InnoDB;
+
+--
 -- Updating to current version
 --
 
