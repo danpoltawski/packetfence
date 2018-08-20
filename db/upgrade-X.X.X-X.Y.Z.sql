@@ -52,7 +52,9 @@ call ValidateVersion;
 --
 ALTER TABLE pf_version engine = InnoDB;
 
-
+--
+-- Add potd column in person table
+--
 ALTER TABLE person
     ADD `psk` varchar(255) NULL DEFAULT NULL,
     ADD `potd` enum('no','yes') NOT NULL DEFAULT 'no',
